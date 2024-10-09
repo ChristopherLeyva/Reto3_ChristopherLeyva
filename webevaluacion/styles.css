@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #006970;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li a img {
+    width: 18px; /* Ajuste del tamaño de los iconos */
+    height: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+}
+
+.banner {
+    background-image: url('img/imagen1.png'); /* Reemplaza con la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #006970;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    nav ul li a img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .banner {
+        font-size: 30px; /* Ajuste del tamaño del texto en pantallas pequeñas */
+        min-height: 70vh; /* Ajuste la altura del banner en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    nav ul li a img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .banner {
+        font-size: 24px;
+        min-height: 60vh; /* Más ajuste de altura para pantallas muy pequeñas */
+    }
+}
